@@ -1,0 +1,8 @@
+{
+    "prefix": "data/efp/top_samples",
+    "data_bkg": "top-efp-sig.h5",
+    "data_sig": "top-efp-bkg.h5",
+    "result_dir": "results/qcd",
+    "plot_name": "qcd",
+    "plot_text": "QCD"
+}
