@@ -32,9 +32,11 @@ python3 src/main.py params/qcd.json
 python3 src/plot.py
 ```
 
+For questions/comments about the code contact: buss@thphys.uni-heidelberg.de
+
 ---
 
 This code was initially written for the paper:
 
 **What’s Anomalous in LHC Jets?**<br/>
-*Thorsten L. Buss, Barry M. Dillon, Thorben Finke, Michael Krämer, Alessandro Morandini, Alexander Mück, Ivan Oleksiuk and Tilman Plehn*
+*Thorsten Buss, Barry M. Dillon, Thorben Finke, Michael Krämer, Alessandro Morandini, Alexander Mück, Ivan Oleksiuk and Tilman Plehn*

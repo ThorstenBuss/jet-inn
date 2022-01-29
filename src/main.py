@@ -29,7 +29,7 @@ def main():
             std=extargs['std']
         )
 
-    model = INN(trainer.num_dim, extargs['num_layers'], extargs['hidden'], extargs['dropout'])
+    model = INN(trainer.num_dim, extargs['num_layers'], extargs['hidden'])
     if use_cuda:
         model = model.cuda()
 

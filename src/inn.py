@@ -9,7 +9,7 @@ import torch.nn.functional as F
 
 class Subnet(nn.Module):
 
-    def __init__(self, dims_in, dims_out, hidden, dropout=0.0):
+    def __init__(self, dims_in, dims_out, hidden):
         super(Subnet, self).__init__()
 
         self.dims_in = dims_in
@@ -19,15 +19,12 @@ class Subnet(nn.Module):
         self.fc2 = nn.Linear(hidden,  dims_out)
 
         self.relu = nn.ReLU()
-        self.dropout = nn.Dropout(dropout)
 
-        torch.nn.init.xavier_uniform_(self.fc1.weight)
         self.fc2.weight.data.fill_(0.0)
         self.fc2.bias.data.fill_(0.0)
 
     def forward(self, x):
         x = self.fc1(x)
-        x = self.dropout(x)
         x = self.relu(x)
         x = self.fc2(x)
 
@@ -35,7 +32,7 @@ class Subnet(nn.Module):
 
 class INN(nn.Module):
 
-    def __init__(self, data_dim, num_layers, hidden, dropout=0.0):
+    def __init__(self, data_dim, num_layers, hidden):
         super(INN, self).__init__()
 
         self.data_dim = data_dim
@@ -61,7 +58,7 @@ class INN(nn.Module):
             orthos = special_ortho_group.rvs(data_dim, size=num_layers)
 
         for i in range(self.num_layers):
-            self.subnets.append(Subnet(self.splits[0], 2 * self.splits[1], hidden, dropout))
+            self.subnets.append(Subnet(self.splits[0], 2 * self.splits[1], hidden))
             ortho = nn.Parameter(torch.FloatTensor(orthos[i]), requires_grad=False)
             self.transformations.append(ortho)
 
