@@ -14,7 +14,7 @@ INN for density-based anomaly search in particle jets.
 
 ## run
 
-To try out the network, you can use the [top tagging dataset](https://arxiv.org/pdf/1902.09914.pdf), for example. You can download the test dataset [here](https://desycloud.desy.de/index.php/s/llbX3zpLhazgPJ6), which is large enough for training the INN. If the file was saved under ```~/Downloads/test.h5```, you can train the network with the following commands.
+To try out the network, you can use the [top tagging dataset](https://arxiv.org/pdf/1902.09914.pdf), for example. You can download the test dataset [here](https://desycloud.desy.de/index.php/s/llbX3zpLhazgPJ6), which is large enough for training and testing. If the file was saved under ```~/Downloads/test.h5```, you can train the network with the following commands.
 
 ```bash
 # install dependences
@@ -36,7 +36,7 @@ For questions/comments about the code contact: buss@thphys.uni-heidelberg.de
 
 ---
 
-This code was initially written for the paper:
+This code was written for the paper:
 
 **What’s Anomalous in LHC Jets?**<br/>
 *Thorsten Buss, Barry M. Dillon, Thorben Finke, Michael Krämer, Alessandro Morandini, Alexander Mück, Ivan Oleksiuk and Tilman Plehn*
