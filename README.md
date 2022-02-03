@@ -39,4 +39,5 @@ For questions/comments about the code contact: buss@thphys.uni-heidelberg.de
 This code was written for the paper:
 
 **What’s Anomalous in LHC Jets?**<br/>
+https://arxiv.org/abs/2202.00686<br/>
 *Thorsten Buss, Barry M. Dillon, Thorben Finke, Michael Krämer, Alessandro Morandini, Alexander Mück, Ivan Oleksiuk and Tilman Plehn*
