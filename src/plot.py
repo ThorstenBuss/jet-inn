@@ -14,17 +14,17 @@ def get_fonts (label_size=14, axislabel_size=22, tick_size=16) :
     labelfont = FontProperties()
     labelfont.set_family('serif')
     labelfont.set_name('Times New Roman')
-    labelfont.set_size(14)
+    labelfont.set_size(label_size)
 
     axislabelfont = FontProperties()
     axislabelfont.set_family('serif')
     axislabelfont.set_name('Times New Roman')
-    axislabelfont.set_size(22)
+    axislabelfont.set_size(axislabel_size)
 
     tickfont = FontProperties()
     tickfont.set_family('serif')
     tickfont.set_name('Times New Roman')
-    tickfont.set_size(16)
+    tickfont.set_size(tick_size)
 
     return labelfont, axislabelfont, tickfont
 
